@@ -1,0 +1,87 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+   ▲ Next.js 16.0.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.108:3000
+
+ ✓ Starting...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+   The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+   	- include was updated to add '.next/dev/types/**/*.ts'
+
+   The following mandatory changes were made to your tsconfig.json:
+
+   	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+ ✓ Ready in 604ms
+ GET /compliance 404 in 1683ms (compile: 1525ms, render: 158ms)
+ GET /audit 404 in 1694ms (compile: 1556ms, render: 138ms)
+ GET /audit 404 in 78ms (compile: 15ms, render: 63ms)
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 16.0.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.108:3000
+
+ ✓ Starting...
+ ✓ Ready in 392ms
+ GET /audit 404 in 1354ms (compile: 1215ms, render: 139ms)
+ GET /compliance 404 in 1348ms (compile: 1187ms, render: 162ms)
+ GET /audit 404 in 111ms (compile: 1709µs, render: 109ms)
+ GET / 200 in 724ms (compile: 476ms, render: 248ms)
+ GET /docs 200 in 464ms (compile: 398ms, render: 66ms)
+ GET /docs 200 in 44ms (compile: 4ms, render: 39ms)
+ GET /docs 200 in 29ms (compile: 1427µs, render: 28ms)
+ GET /docs 200 in 39ms (compile: 3ms, render: 36ms)
+ GET /docs 200 in 50ms (compile: 3ms, render: 47ms)
+ GET /docs 200 in 53ms (compile: 19ms, render: 35ms)
+ GET /docs 200 in 38ms (compile: 2ms, render: 36ms)
+ GET /sdk 200 in 295ms (compile: 240ms, render: 56ms)
+ GET / 200 in 155ms (compile: 6ms, render: 149ms)
+ GET /audit 404 in 95ms (compile: 5ms, render: 90ms)
+ GET /compliance 404 in 144ms (compile: 14ms, render: 131ms)
+ GET /audit 404 in 238ms (compile: 11ms, render: 227ms)
+ GET /audit 404 in 242ms (compile: 4ms, render: 237ms)
+ GET /compliance 404 in 191ms (compile: 5ms, render: 186ms)
+ GET /audit 404 in 137ms (compile: 11ms, render: 125ms)
+ GET / 200 in 498ms (compile: 4ms, render: 494ms)
+ ✓ Compiled in 215.5s
+ GET /payments 404 in 72ms (compile: 18ms, render: 53ms)
+ GET /docs 200 in 971ms (compile: 414ms, render: 557ms)
+ GET /docs 200 in 95ms (compile: 8ms, render: 87ms)
+ GET /docs 200 in 151ms (compile: 5ms, render: 146ms)
+ GET /docs 200 in 490ms (compile: 111ms, render: 379ms)
+ GET /docs 200 in 88ms (compile: 3ms, render: 85ms)
+ GET /docs 200 in 51ms (compile: 1430µs, render: 50ms)
+ GET /docs 200 in 53ms (compile: 1787µs, render: 51ms)
+ GET / 200 in 866ms (compile: 115ms, render: 751ms)
+ GET /compliance 404 in 105ms (compile: 5ms, render: 100ms)
+ GET /compliance 404 in 61ms (compile: 16ms, render: 45ms)
+ GET / 200 in 224ms (compile: 36ms, render: 188ms)
+ GET /docs 200 in 4.5s (compile: 230ms, render: 4.3s)
+ GET /docs 200 in 2.4s (compile: 189ms, render: 2.2s)
+ GET /docs 200 in 63ms (compile: 5ms, render: 59ms)
+ ✓ Compiled in 91.9s
+ ✓ Compiled in 17.8s
+
+thread 'tokio-runtime-worker' (73139329) panicked at crates/napi/src/next_api/turbopack_ctx.rs:345:29:
+Failed to open /var/folders/_4/jqqj__7101d9bv3qlry5jbxm0000gn/T/next-panic-cd106c9d45d16789344bfd343109c95a.log
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tokio-runtime-worker' (73139323) panicked at crates/napi/src/next_api/turbopack_ctx.rs:292:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (73139324) panicked at crates/napi/src/next_api/turbopack_ctx.rs:292:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (73139328) panicked at crates/napi/src/next_api/turbopack_ctx.rs:292:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (73139322) panicked at crates/napi/src/next_api/turbopack_ctx.rs:292:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+ ✓ Compiled in 74.2s
+ ✓ Compiled in 38ms
+[?25h
